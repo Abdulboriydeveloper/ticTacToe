@@ -1,0 +1,148 @@
+body {
+  font: 24px 'Century Gothic', Futura, sans-serif;
+  margin: 20px;
+  background: #FF0266;
+}
+
+.logo{
+  position: absolute;
+  width: 16px;
+  height: 63px;
+  left: 75px;
+  top: 63px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+  display: none;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  border: 5.56757px solid #FFFFFF;
+  border-radius: 30px;
+  float: left;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 85px;
+  color: #FFFFFF;
+  width: 89.08px;
+  height: 89.08px;
+  margin-right: 22px;
+  margin-top: 22px;
+  padding: 0;
+  text-align: center;
+}
+
+.square--green {
+  background: #0336FF;
+  color: #fff;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin-left: 566px;
+  margin-top: 150px;
+}
+
+.game-info {
+  margin-left: 610px;
+  width: 210px;
+}
+
+.button {
+  background-color: #555555; 
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button--blue {
+  background-color: #0336FF;
+  color: rgba(255, 222, 3, 1);
+  font-weight: bold;
+}
+
+.button--new-game {
+  background: #f80566;
+  color: #fff;
+  border: 5.56757px solid #FFFFFF;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-left: -1px;
+  width: 210px;
+  height: 50px;
+}
+
+.playerName{
+  color: #fff;
+  font-size: 30px;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+  .logo{
+    position: absolute;
+    width: 16px;
+    height: 63px;
+    left: 20px;
+    top: 20px;
+  }
+  .board-row{
+    display: flex;
+  }
+
+  .game-info {
+    margin-left: 100px;
+    width: 210px;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 350px;
+  }
+  .square {
+    border: 5.56757px solid #FFFFFF;
+    border-radius: 25px;
+    float: left;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 72px;
+    color: #FFFFFF;
+    width: 70.08px;
+    height: 70.08px;
+    margin-right: 22px;
+    margin-top: 22px;
+    padding: 0;
+    text-align: center;
+  }
+  .button--new-game{
+    font-size: 23px;
+  }
+}
